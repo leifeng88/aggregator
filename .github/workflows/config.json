@@ -1,0 +1,206 @@
+{
+    "domains": [
+        {
+            "name": "",
+            "sub": [],
+            "domain": "",
+            "enable": false,
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "push_to": [],
+            "ignorede": true,
+            "liveness": true,
+            "rate": 2.5,
+            "count": 2,
+            "coupon": "",
+            "secure": false,
+            "renew": {
+                "account": [
+                    {
+                        "email": "",
+                        "passwd": "",
+                        "ticket": {
+                            "enable": true,
+                            "autoreset": false,
+                            "subject": "",
+                            "message": "",
+                            "level": 1
+                        }
+                    }
+                ],
+                "plan_id": 3,
+                "package": "",
+                "method": 1,
+                "coupon_code": "",
+                "chatgpt": {
+                    "enable": true,
+                    "regex": "",
+                    "operate": "IN"
+                }
+            }
+        }
+    ],
+    "crawl": {
+        "enable": true,
+        "exclude": "",
+        "threshold": 5,
+        "singlelink": true,
+        "persist": {
+            "subs": "crawledsubs",
+            "proxies": "crawledproxies"
+        },
+        "config": {
+            "rename": "coco {name}",
+            "include": "",
+            "exclude": "",
+            "xxxxxxx": ""
+        },
+        "telegram": {
+            "enable": false,
+            "pages": 5,
+            "exclude": "",
+            "users": {
+                "channel": {
+                    "include": "",
+                    "exclude": "",
+                    "config": {
+                        "rename": "",
+                        "xxxxxx": ""
+                    },
+                    "push_to": []
+                }
+            }
+        },
+        "google": {
+            "enable": true,
+            "exclude": "",
+            "limits": 100,
+            "notinurl": [],
+            "push_to": ["group1"]
+        },
+        "yandex": {
+            "enable": true,
+            "exclude": "",
+            "within": 3,
+            "pages": 5,
+            "notinurl": [],
+            "push_to": ["group1"]
+        },
+        "github": {
+            "enable": false,
+            "pages": 2,
+            "push_to": [],
+            "exclude": "",
+            "spams": []
+        },
+        "twitter": {
+            "enable": false,
+            "users": {
+                "username": {
+                    "enable": true,
+                    "num": 30,
+                    "include": "",
+                    "exclude": "",
+                    "config": {
+                        "rename": "",
+                        "xxxxxx": ""
+                    },
+                    "push_to": []
+                }
+            }
+        },
+        "repositories": [
+            {
+                "enable": false,
+                "username": "",
+                "repo_name": "",
+                "commits": 3,
+                "exclude": "",
+                "push_to": []
+            }
+        ],
+        "pages": [
+            {
+                "enable": false,
+                "url": "",
+                "include": "",
+                "exclude": "",
+                "multiple": true,
+                "placeholder": "",
+                "start": 1,
+                "end": 10,
+                "config": {
+                    "rename": ""
+                },
+                "push_to": []
+            }
+        ],
+        "scripts": [
+            {
+                "enable": false,
+                "script": "file#function",
+                "params": {
+                    "persist": {
+                        "fileid": ""
+                    },
+                    "any": "xxx",
+                    "config": {
+                        "enable": true,
+                        "liveness": true,
+                        "exclude": "",
+                        "rename": "",
+                        "push_to": []
+                    }
+                }
+            }
+        ]
+    },
+    "groups": {
+        "group1": {
+            "emoji": true,
+            "list": true,
+            "targets": {
+                "clash": "group1-clash",
+                "singbox": "group1-singbox",
+                "v2ray": "group1-v2ray"
+            },
+            "regularize": {
+                "enable": false,
+                "locate": true,
+                "residential": true,
+                "bits": 2
+            }
+        }
+    },
+    "storage": {
+        "engine": "gist",
+        "items": {
+            "group1-clash": {
+                "username": "leifeng88",
+                "folderid": "a0ec213479e473603fb1dab6a9f602b5",
+                "fileid": "premium-clash"
+            },
+            "group1-singbox": {
+                "username": "leifeng88",
+                "folderid": "a0ec213479e473603fb1dab6a9f602b5",
+                "fileid": "premium-singbox"
+            },
+            "group1-v2ray": {
+                "username": "leifeng88",
+                "folderid": "a0ec213479e473603fb1dab6a9f602b5",
+                "fileid": "premium-v2ray"
+            },
+            "crawledsubs": {
+                "username": "leifeng88",
+                "folderid": "a0ec213479e473603fb1dab6a9f602b5",
+                "fileid": "crawledsubs"
+            },
+            "crawledproxies": {
+                "username": "leifeng88",
+                "folderid": "a0ec213479e473603fb1dab6a9f602b5",
+                "fileid": ""
+            }
+        }
+    }
+}
